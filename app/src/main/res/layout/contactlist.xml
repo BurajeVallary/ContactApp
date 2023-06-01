@@ -53,4 +53,46 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
+    <ImageView
+        android:id="@+id/ivduo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivemail"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber"
+        app:srcCompat="@drawable/baseline_duo_24" />
+
+    <ImageView
+        android:id="@+id/ivemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintStart_toEndOf="@+id/ivduo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/ivphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivfav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_local_phone_24" />
+
+    <ImageView
+        android:id="@+id/ivfav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
