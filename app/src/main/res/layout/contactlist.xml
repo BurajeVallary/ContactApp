@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--You can have it as the cardview as root holder like the cardview instead of text view-->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,13 +8,14 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivavatar"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="319dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar" />
@@ -26,7 +29,7 @@
         android:layout_marginEnd="222dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/ivavatar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -38,7 +41,7 @@
         android:layout_marginEnd="221dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/ivavatar"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
     <TextView
@@ -50,7 +53,7 @@
         android:layout_marginEnd="222dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/ivavatar"
         app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
     <ImageView
@@ -61,7 +64,7 @@
         android:layout_marginTop="26dp"
         android:layout_marginEnd="38dp"
         app:layout_constraintEnd_toStartOf="@+id/ivemail"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/ivavatar"
         app:layout_constraintTop_toBottomOf="@+id/tvNumber"
         app:srcCompat="@drawable/baseline_duo_24" />
 
@@ -94,5 +97,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="60dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

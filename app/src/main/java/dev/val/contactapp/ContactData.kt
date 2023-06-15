@@ -1,8 +1,8 @@
 package dev.`val`.contactapp
 
 data class ContactData(
+    var avatar: String,
     var name:String,
     var email:String,
-    var avatar:String,
     var number:String
 )
